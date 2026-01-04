@@ -19,7 +19,7 @@ function buildFallbackUri() {
 }
 
 module.exports = async () => {
-  const uri = process.env.MONGO_URI || "mongodb+srv://meshakotieno343_db_user:wXxHy6rP3SJJetbC@cluster0.tddifyb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  const uri = process.env.MONGO_URI;
   const connectOpts = {
     // Mongoose 6+ uses these by default but we keep them explicit for clarity
     useNewUrlParser: true,
